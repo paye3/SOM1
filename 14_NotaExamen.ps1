@@ -3,7 +3,7 @@ $nota = Read-Host
 
 if ($nota -ge 0 -and $nota -lt 5){
     echo "INSUFICIENTE"
-} elseif ($nota --ge 5 -and $nota -lt 6) {
+} elseif ($nota -ge 5 -and $nota -lt 6) {
     <# Action when this condition is true #>
     echo "Suficiente pincheee!!!"
 } elseif ($nota -ge 6 -and $nota -lt 7) {
@@ -11,7 +11,7 @@ if ($nota -ge 0 -and $nota -lt 5){
     echo "Solo bien, esfuerzate más!!"
 } elseif ($nota -ge 7 -and $nota -lt 9) {
     <# Action when this condition is true #>
-    echo "notable..."
+    echo "Notable..."
 } elseif ($nota -ge 9 -and $nota -le 10) {
     <# Action when this condition is true #>
     echo "¿A quien has copiado?"
