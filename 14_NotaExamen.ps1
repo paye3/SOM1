@@ -1,5 +1,6 @@
 Write-Host "Introduce tu nota de examen"
 $nota = Read-Host
+$nota = [float]$nota #float sirve para tratar decimales.
 
 if ($nota -ge 0 -and $nota -lt 5){
     echo "INSUFICIENTE"
