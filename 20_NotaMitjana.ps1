@@ -1,3 +1,31 @@
+<#
+.SYNOPSIS
+Calcula la nota media de un alumno y muestra un mensaje según el resultado.
+
+.DESCRIPTION
+Este script solicita al usuario las notas de tres asignaturas: SOM (Sistemas Operativos y Mantenimiento), Muntatge (Montaje y Mantenimiento de Equipos) y Xarxes (Redes). Luego, calcula la nota media y muestra un mensaje según el resultado obtenido.
+
+.PARAMETER SOM
+La nota de la asignatura SOM.
+
+.PARAMETER Muntatge
+La nota de la asignatura Muntatge.
+
+.PARAMETER Xarxes
+La nota de la asignatura Xarxes.
+
+.OUTPUTS
+El mensaje que indica el resultado obtenido por el alumno.
+
+.EXAMPLE
+PS C:\> .\20_NotaMitjana.ps1
+Introdueix la nota de SOM: 8
+Introdueix la nota de Muntatge: 7
+Introdueix la nota de Xarxes: 6
+Ara mos entenem... un be pero ho pots fer millor, confii amb tu!!!
+
+#>
+
 Write-Host "Introdueix la nota de SOM:"
 $SOM = Read-Host
 $SOM = [float]$SOM
