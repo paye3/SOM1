@@ -11,7 +11,7 @@ $Xarxes = [float]$Xarxes
 $notaMitjana = ($SOM + $Muntatge + $Xarxes) / 3
 
 if ($notaMitjana -ge 9) {
-  Write-Output "L'alumne ha obtingut un sobresalent.... No inventis, no es bo!!"
+  Write-Output "L'alumne ha obtingut un excelent.... No inventis, no es bo!!"
 } elseif ($notaMitjana -ge 8) {
   Write-Output "L'alumne ha obtingut un 8 o mes de mitjana... Si ja, qui s'ho creu?"
 } elseif ($notaMitjana -ge 7) {
