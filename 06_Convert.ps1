@@ -19,8 +19,8 @@ Output:
 El resultat es: 10
 #>
 
-Write-Host 
-$binario = Read-Host "Escrit un numero en binari per pasar-lo a decimal"
-$resultado = [Convert]::ToInt32($binario,2)
+Write-Host "Escriu un numero en octal per pasar-lo a decimal"
+$binari = Read-Host 
+$resultado = [Convert]::ToInt32($binari,2)
 Write-Host  "El resultat es: "$resultado 
 Write-Host
