@@ -1,16 +1,18 @@
 Write-Host "Introdueix cara o creu (c/c):"
-$opcio = Read-Host.ToLower()
-
+$opcio = Read-Host
+$opcio = $opcio.ToLower()
 $resultat = Get-Random -Minimum 1 -Maximum 2
 
 if ($resultat -eq 1) {
   $caraCreu = "cara"
-} else {
+}
+else {
   $caraCreu = "creu"
 }
 
 if ($opcio -eq $caraCreu) {
   Write-Output "Has guanyat!"
-} else {
+}
+else {
   Write-Output "Has perdut!"
 }
