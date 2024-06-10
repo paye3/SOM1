@@ -1,0 +1,1 @@
+Write-Output "Divisibles entre 5"

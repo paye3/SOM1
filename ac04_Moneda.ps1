@@ -1,5 +1,5 @@
 Write-Host "Introdueix cara o creu (c/c):"
-$opcio = Read-Host.ToLower()
+$opcio = Read-Host
 
 $resultat = Get-Random -Minimum 1 -Maximum 2
 
