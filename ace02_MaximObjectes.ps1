@@ -1,13 +1,13 @@
 Write-Host "Quina quantitat de diners portes?"
 $diners = Read-Host
-$diners = [float]$diners
+$diners = [int]$diners
 
 Write-Host "Que val el producte que vols comprar?"
 $preu = Read-Host
-$preu = [float]$preu
+$preu = [int]$preu
 
 
-$quantitat = $diners / $preu
-$quantitat = [math]::round($quantitat)
+[int]$quantitat = $diners / $preu
+
 
 Write-Host "Pots comprar un total de $quantitat objectes a n'aquest preu $preu"
