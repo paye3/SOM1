@@ -9,6 +9,8 @@ $preu = [float]$preu
 $quantitat = $diners / $preu
 
 # No entran las funciones matemàticas
-$quantitat2 = [math]::floor($quantitat)
+$quantitatFinal = [math]::floor($quantitat)
+$Retorn = ($quantitat-$quantitatFinal) * $preu
 
-Write-Host "Pots comprar un total de $quantitat2 objectes a n'aquest preu $preu"
+Write-Host "Pots comprar un total de $quantitatFinal objectes a n'aquest preu $preu"
+Write-Host "El retorn de la compra es $Retorn"
